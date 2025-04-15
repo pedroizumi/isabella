@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Motivos pelo qual eu te amo</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #FF5F6D, #FFC371); /* Gradiente suave entre rosa e laranja */
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            height: 100%;
+            overflow-x: hidden;
+            position: relative;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            padding: 60px 20px;
+            max-width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            color: #FFDAB9;
+            z-index: 2;
+            position: relative;
+        }
+
+        p {
+            font-size: 3em;
+            font-weight: bold;
+            color: #FFDAB9;
+            margin-top: 50px;
+            z-index: 2;
+            position: relative;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .link {
+            display: block;
+            margin-top: 40px;
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #FFDAB9;
+            text-decoration: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+            text-align: center;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.2);
+            text-shadow: 0 0 8px #fff;
+        }
+
+        /* Animação de corações no fundo */
+        .heart {
+            position: absolute;
+            animation: moveHearts 10s infinite;
+            font-size: 2em;
+            color: rgba(255, 20, 147, 0.7); /* Coração em um tom de rosa */
+            opacity: 0;
+        }
+
+        @keyframes moveHearts {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-200px) rotate(180deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Colocar vários corações em posições aleatórias */
+        .heart:nth-child(1) { left: 10%; animation-duration: 12s; }
+        .heart:nth-child(2) { left: 20%; animation-duration: 14s; }
+        .heart:nth-child(3) { left: 30%; animation-duration: 16s; }
+        .heart:nth-child(4) { left: 40%; animation-duration: 18s; }
+        .heart:nth-child(5) { left: 50%; animation-duration: 20s; }
+        .heart:nth-child(6) { left: 60%; animation-duration: 22s; }
+        .heart:nth-child(7) { left: 70%; animation-duration: 24s; }
+        .heart:nth-child(8) { left: 80%; animation-duration: 26s; }
+        .heart:nth-child(9) { left: 90%; animation-duration: 28s; }
+    </style>
+</head>
+<body>
+
+    <!-- Corações flutuando no fundo -->
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💘</div>
+    <div class="heart">💝</div>
+    <div class="heart">💞</div>
+    <div class="heart">❤️</div>
+    <div class="heart">💖</div>
+    <div class="heart">💘</div>
+    <div class="heart">💝</div>
+
+    <h1>Esse foi um pouco dos motivos pelo qual eu te amo</h1>
+    
+    <p>Mas o que eu mais amo disso tudo, é que eu sei que esse é só o começo.</p>
+
+</body>
+</html>
